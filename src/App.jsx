@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from 'react';
+import Modal from "./Components/Modal/Modal";
+import './App.css'
 
 const api = {
   key: "db1ac38dac6827d5ace292718e7f7db1",
@@ -14,7 +16,8 @@ function App() {
   fetch(`${api.base}weather?q=${search}&units=imperial&APPID=${api.key}`)
   .then((res) => res.json())
   .then((result) => {
-    setWeather(result);
+    setWeather(result)
+    console.log(result);
   })
  }
 
@@ -22,33 +25,35 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* HEADER */}
-        <h1>Weather App</h1>
+        <div className="image-wrapper">
+          <div className="DINAJ"></div>
+        </div> 
+
+        <div className="instruction">Enter your city below and find out.</div>
 
         {/* Search Box */}
         <div>
-          <input type="text" 
+          <input className="prompt" type="text" 
           placeholder="Search..."
           onChange={(e) => setSearch(e.target.value)}
           />
 
-          <button onClick={searchPressed}>Search</button>
+          <button className="button" onClick={searchPressed}>Search</button>
 
         </div>
-        {/* Location */}
-        <p>{weather.name}</p>
-
-        {/* Temperature F/C */}
-        <p>{weather.main?.temp}</p>
-
         {/* Answer */}
-        <p> {weather.main?.temp < 25? "GET A BIG JACKET" 
-        : weather.main?.temp < 45? "GET A MEDIUM JACKET" 
-        : weather.main?.temp < 64? "GET A LIGHT JACKET"
-        :weather.main?.temp >65? "NO JACKET!!":"DO I need a JAcket?" } </p>
+        <p className="answer"> {weather.main?.temp < 25? "You're gonna need a winter jacket" 
+        : weather.main?.temp < 45? "You could use a medium jacket" 
+        : weather.main?.temp < 64? "You're gonna need a light jacket (or a sweatshirt!)"
+        :weather.main?.temp >65? "NO JACKET!!":" " } </p>
+
+        {/* Temperature in current city */}
+        <p className="temp"> {weather.main?.temp && "It is currently " + (Math.floor(weather.main?.temp)) + '° in'} {weather.name} </p>
+
 
         {/* Condition (sunny) */}
-        <p>Sunny</p>
       </header>
+      <Modal weather={weather}/>
     </div>
   );
 }
