@@ -25,14 +25,21 @@ function Modal({weather}) {
         className="overlay"></div>
         <ul className="modal-content"><span className='report'>Full Report</span>
             
-                <li>{weather.weather[0].description}</li>
-                <li>Temperature: {(Math.round(weather.main.temp))}°</li>
-                <li>Feels like: {(Math.round(weather.main.feels_like))}°</li>
-                <li>High: {(Math.round(weather.main.temp_max))}° </li>
-                <li>Low: {(Math.round(weather.main.temp_min))}°</li>
-                <li>Humidity: {weather.main.humidity}</li>
-                <li>Pressure: {weather.main.pressure} inHg</li>
-                <li>Wind:{weather.wind.speed} mph</li>
+                <li className='paramaters'>{weather.weather[0].description}</li>
+                <li className='paramaters'>Temperature</li>
+                <li className='response'>{(Math.round(weather.main.temp))}°</li>
+                <li className='paramaters'>Feels like</li>
+                <li className='response'>{(Math.round(weather.main.feels_like))}°</li>
+                <li className='paramaters'>High</li>
+                <li className='response'>{(Math.round(weather.main.temp_max))}°</li>
+                <li className='paramaters'>Low:</li>
+                <li className='response'>{(Math.round(weather.main.temp_min))}°</li>
+                <li className='paramaters'>Humidity</li>
+                <li className='response'>{weather.main.humidity}</li>
+                <li className='paramaters'>Pressure</li>
+                <li className='response'>{weather.main.pressure} inHg</li>
+                <li className='paramaters'>Wind</li>
+                <li className='response'>{weather.wind.speed} mph</li>
 
 
             
