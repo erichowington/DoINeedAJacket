@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Modal from "./Components/Modal/Modal";
 import './App.css'
 import JacketModal from "./Components/JacketModal/JacketModal"
-import RecLinks from "./Components/RecLinks";
+import RecLinks from "./Components/RecLinks/RecLinks";
 
 const api = {
   key: "db1ac38dac6827d5ace292718e7f7db1",
@@ -44,7 +44,8 @@ function App() {
       <header className="App-header">
         {/* HEADER */}
         <div className="image-wrapper">
-          <div className="DINAJ"></div>
+          {/* <div className="DINAJ"></div> */}
+          <img src="./images/Header_TRNSPRNT.png" alt="" />
         </div> 
 
         <div className="instruction">Enter your city below and find out.</div>
@@ -67,7 +68,7 @@ function App() {
       </header>
       <JacketModal  weather={weather} handleJacketModal={handleJacketModal} jacketModalImg={jacketModalImg}/>
       <Modal weather={weather}/>
-      <RecLinks handleRecLinks={handleRecLinks}/>
+      <RecLinks className="recs" handleRecLinks={handleRecLinks}/>
     </div>
   );
 }
