@@ -26,7 +26,7 @@ function Modal({handleJacketModal, jacketModalImg, weather}) {
             <div className="jacket-modal-content">
             <img className='jacket-img' src={jacketModalImg} />
                 <button
-                className='close-jacket-modal'
+                className='close-modal'
                 onClick={toggleModal}>
                     X
                 </button>
