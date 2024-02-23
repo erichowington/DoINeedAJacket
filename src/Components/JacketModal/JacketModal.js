@@ -16,7 +16,7 @@ function Modal({handleJacketModal, jacketModalImg, weather}) {
     <p className="answer" onClick={toggleModal}> {weather.main?.temp < 25? "You're gonna need a winter jacket" 
         : weather.main?.temp < 45? "You could use a medium jacket" 
         : weather.main?.temp < 64? "You're gonna need a light jacket (or a sweatshirt!)"
-        :weather.main?.temp >65? "NO JACKET!!":" " } </p>
+        :weather.main?.temp >=64? "NO JACKET!!":" " } </p>
 
     {modal && (
         <div className='jacket-modal'>

@@ -61,11 +61,12 @@ function Modal({ handleRecLinks }) {
                   <li className="rec">Arcteryx: Squamish Hoody</li>
                 </a>
               </ul>
-            </div>
-          </div>
-          <button className="close-modal" onClick={toggleModal}>
+              <button className="close-rec-links-modal" onClick={toggleModal}>
             X
           </button>
+            </div>
+            
+          </div>
         </>
       )}
     </>

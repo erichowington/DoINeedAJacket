@@ -33,6 +33,9 @@ function App() {
   } else if (weather.main?.temp < 64) {
     setJacketModalImg("./images/DINAJ-LIGHT.png")
   }
+  else if (weather.main?.temp > 64){
+    setJacketModalImg("./images/DINAJ-NONE.png")
+  }
  }
 
  function handleRecLinks (){

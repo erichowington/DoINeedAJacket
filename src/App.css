@@ -70,9 +70,28 @@
   font-size:x-large;
   font-weight: 500;
   padding-top: 10px;
+ font-weight: 500;
+}
+@media only screen and (max-width: 600px){
+  .App{
+    background-image: url("../public/images/DINAJ-PHONE-BG.png");
+    background-size:auto;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 900px){
+  .App{
+    background-image: url("../public/images/DINAJ-PHONE-BG.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 901px) {
- 
+  .App{
+    background-image:url("../public/images/DINAJ-PHONE-BG.png");
+    background-size: cover;
+
+  }
 
 }
