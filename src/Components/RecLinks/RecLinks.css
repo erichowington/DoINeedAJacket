@@ -1,6 +1,9 @@
 .rec-links-content{
     top: 40%;
     left: 50%;
+    background-image:url("https://img.freepik.com/free-vector/gradient-background-with-green-tones_23-2148357100.jpg") ;
+    background-repeat:no-repeat;
+    background-size: cover;
     transform: translate(-50%, -50%);
     padding: 14px 28px;
     max-width: 600px;
@@ -8,14 +11,20 @@
     position: inherit;
     background-color: white;
     font-size: x-large;
+    font-weight: 600;
+    color:rgb(0, 0, 0);
+    border: 1px solid white;
+    border-radius: 20px;
 
 }
 li.rec{
     font-size: small;
-    color:red;
+    color:rgb(244, 40, 207);
     text-align: center;
     padding-top: 5px;
     padding-bottom: 10px;
+    font-weight: 800;
+    text-decoration: none;
 }
 .rec-links-modal, .overlay {
     width: 100vw;
@@ -55,6 +64,7 @@ li.rec{
     padding: 2px;
     font-size: large;
     font-weight: 400;
+    background-color: rgb(255, 255, 255, 0.3);
     
 }
 .Medium{
@@ -63,6 +73,7 @@ li.rec{
     padding: 2px;
     font-size: large;
     font-weight: 400;
+    background-color: rgb(255, 255, 255, 0.3);
 }
 .Light{
     list-style: none;
@@ -70,6 +81,7 @@ li.rec{
     padding: 2px;
     font-size: large;
     font-weight: 400;
+    background-color: rgb(255, 255, 255, 0.3);
 }
 
 
