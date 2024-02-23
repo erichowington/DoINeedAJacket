@@ -43,7 +43,7 @@ Based on your city entered, we can determine if you do infact, need a jacket, an
 <h5>Raul Jiminian</h5>
 <h5>Chris Duggan</h5>
 <h5>Megan Hawkins</h5>
-<h5>Jordan Bank/h5>
+<h5>Jordan Bank</h5>
 
 
 <h3>This APP was made using React</h3>
