@@ -44,6 +44,7 @@ Based on your city entered, we can determine if you do infact, need a jacket, an
 <h5>Chris Duggan</h5>
 <h5>Megan Hawkins</h5>
 <h5>Jordan Bank</h5>
+<h5>Booker (for letting me use his charger in a critical moment)</h5>
 
 
 <h3>This APP was made using React</h3>
