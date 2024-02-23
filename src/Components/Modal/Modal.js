@@ -23,7 +23,8 @@ function Modal({weather}) {
         <div 
         onClick={toggleModal}
         className="overlay"></div>
-        <ul className="modal-content"><span className='report'>Full Report</span>
+        <ul className="modal-content">
+        <img className="head-graf" src='./images/full-report.png'/>
             
                 <li className='paramaters'>{weather.weather[0].description}</li>
                 <li className='paramaters'>Temperature</li>
