@@ -2,10 +2,7 @@
 
 The age old question that enters your head before you leave the house? Do I need a jacket?
 
-Through geolocation, we'll let you know if you need a jacket.
-(if you don't want us up in your business, enter your city).
-
-Based on your location or city entered, we can determine if you do infact, need a jacket, and what kind of jacket you might need.
+Based on your city entered, we can determine if you do infact, need a jacket, and what kind of jacket you might need.
 
 <h3>WIREFRAME</h3>
 
@@ -34,13 +31,21 @@ Based on your location or city entered, we can determine if you do infact, need 
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | https://api.openweathermap.org/data/2.5/weather?q=city name&appid=API key|
 
-<h3>Media Query</h3>
+<h3>Responsive Design</h3>
 
-![alt text]()
+![alt text](https://i.imgur.com/5IuEY1U.png)
+
+<h4>Rendered resposive layouts for optimum user experience.</h4>
+
+<h3>References and thanks</h3>
+<h4>Modal build out walkthrough thanks to The Web School</h4> 
+<h5>https://www.youtube.com/watch?v=9DwGahSqcEc</h5>
+<h5>Raul Jiminian</h5>
+<h5>Chris Duggan</h5>
+<h5>Megan Hawkins</h5>
+<h5>Jordan Bank/h5>
 
 
-<h3>Languages Used</h3>
-<h4>HTML</h4>
-<h4>CSS</h4>
-<h4>JAVASCRIPT</h4>
+<h3>This APP was made using React</h3>
+
 
