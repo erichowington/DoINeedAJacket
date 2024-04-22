@@ -8,7 +8,7 @@ https://dinaj.netlify.app/
 
 <h3>WIREFRAME</h3>
 
-![alt text](https://i.imgur.com/ofkjiV3.png)
+<img src="https://github.com/erichowington/DoINeedAJacket/blob/main/public/images/DINAJ.WIREFRAME%20copy.png?raw=true" width="800" height="auto">
 
 
 ## API Reference
